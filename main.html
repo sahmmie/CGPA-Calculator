@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CGP Calculator</title>
+    <link rel="stylesheet" href="./bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+    <div id="container">
+        <h1>CGP Calculator</h1>
+        <div id="calculator">
+
+            <form>
+                <p class="lead mb-3 mt-3">Enter Your Course Unit and your Grade<p>
+                        <div class="row mr-2 ml-2 mb-2">
+                            <div class="col-md-4">
+                                <div class="inputwrapper city-input-wrapper">
+                                    <input class="form-control" type="text" value="Course 1" readonly />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cu1" class="form-control">
+                                        <option disabled selected value="0">-- Course Unit --</option>
+                                        <option value="6">6 Units</option>
+                                        <option value="5">5 Units</option>
+                                        <option value="4">4 Units</option>
+                                        <option value="3">3 Units</option>
+                                        <option value="2">2 Units</option>
+                                        <option value="1">1 Unit</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cg1" class="form-control">
+                                        <option disabled selected value="0">--Course Grade --</option>
+                                        <option value="5">A</option>
+                                        <option value="4">B</option>
+                                        <option value="3">C</option>
+                                        <option value="2">D</option>
+                                        <option value="1">E</option>
+                                        <option value="0">F</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row mr-2 ml-2 mb-2">
+                            <div class="col-md-4">
+                                <div class="inputwrapper city-input-wrapper">
+                                    <input class="form-control" type="text" value="Course 2" readonly />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cu2" class="form-control">
+                                        <option disabled selected value="0">-- Course Unit --</option>
+                                        <option value="6">6 Units</option>
+                                        <option value="5">5 Units</option>
+                                        <option value="4">4 Units</option>
+                                        <option value="3">3 Units</option>
+                                        <option value="2">2 Units</option>
+                                        <option value="1">1 Unit</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cg2" class="form-control">
+                                        <option disabled selected value="0">--Course Grade --</option>
+                                        <option value="5">A</option>
+                                        <option value="4">B</option>
+                                        <option value="3">C</option>
+                                        <option value="2">D</option>
+                                        <option value="1">E</option>
+                                        <option value="0">F</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mr-2 ml-2 mb-2">
+                            <div class="col-md-4">
+                                <div class="inputwrapper city-input-wrapper">
+                                    <input class="form-control" type="text" value="Course 3" readonly />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cu3" class="form-control">
+                                        <option disabled selected value="0">-- Course Unit --</option>
+                                        <option value="6">6 Units</option>
+                                        <option value="5">5 Units</option>
+                                        <option value="4">4 Units</option>
+                                        <option value="3">3 Units</option>
+                                        <option value="2">2 Units</option>
+                                        <option value="1">1 Unit</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cg3" class="form-control">
+                                        <option disabled selected value="0">--Course Grade --</option>
+                                        <option value="5">A</option>
+                                        <option value="4">B</option>
+                                        <option value="3">C</option>
+                                        <option value="2">D</option>
+                                        <option value="1">E</option>
+                                        <option value="0">F</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mr-2 ml-2 mb-2">
+                            <div class="col-md-4">
+                                <div class="inputwrapper city-input-wrapper">
+                                    <input class="form-control" type="text" value="Course 4" readonly />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cu4" class="form-control">
+                                        <option disabled selected value="0">-- Course Unit --</option>
+                                        <option value="6">6 Units</option>
+                                        <option value="5">5 Units</option>
+                                        <option value="4">4 Units</option>
+                                        <option value="3">3 Units</option>
+                                        <option value="2">2 Units</option>
+                                        <option value="1">1 Unit</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cg4" class="form-control">
+                                        <option disabled selected value="0">--Course Grade --</option>
+                                        <option value="5">A</option>
+                                        <option value="4">B</option>
+                                        <option value="3">C</option>
+                                        <option value="2">D</option>
+                                        <option value="1">E</option>
+                                        <option value="0">F</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mr-2 ml-2 mb-2">
+                            <div class="col-md-4">
+                                <div class="inputwrapper city-input-wrapper">
+                                    <input class="form-control" type="text" value="Course 5" readonly />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cu5" class="form-control">
+                                        <option disabled selected value="0">-- Course Unit --</option>
+                                        <option value="6">6 Units</option>
+                                        <option value="5">5 Units</option>
+                                        <option value="4">4 Units</option>
+                                        <option value="3">3 Units</option>
+                                        <option value="2">2 Units</option>
+                                        <option value="1">1 Unit</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cg5" class="form-control">
+                                        <option disabled selected value="0">--Course Grade --</option>
+                                        <option value="5">A</option>
+                                        <option value="4">B</option>
+                                        <option value="3">C</option>
+                                        <option value="2">D</option>
+                                        <option value="1">E</option>
+                                        <option value="0">F</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mr-2 ml-2 mb-2">
+                            <div class="col-md-4">
+                                <div class="inputwrapper city-input-wrapper">
+                                    <input class="form-control" type="text" value="Course 6" readonly />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cu6" class="form-control">
+                                        <option disabled selected value="0">-- Course Unit --</option>
+                                        <option value="6">6 Units</option>
+                                        <option value="5">5 Units</option>
+                                        <option value="4">4 Units</option>
+                                        <option value="3">3 Units</option>
+                                        <option value="2">2 Units</option>
+                                        <option value="1">1 Unit</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cg6" class="form-control">
+                                        <option disabled selected value="0">--Course Grade --</option>
+                                        <option value="5">A</option>
+                                        <option value="4">B</option>
+                                        <option value="3">C</option>
+                                        <option value="2">D</option>
+                                        <option value="1">E</option>
+                                        <option value="0">F</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mr-2 ml-2 mb-2">
+                            <div class="col-md-4">
+                                <div class="inputwrapper city-input-wrapper">
+                                    <input class="form-control" type="text" value="Course 7" readonly />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cu7" class="form-control">
+                                        <option disabled selected value="0">-- Course Unit --</option>
+                                        <option value="6">6 Units</option>
+                                        <option value="5">5 Units</option>
+                                        <option value="4">4 Units</option>
+                                        <option value="3">3 Units</option>
+                                        <option value="2">2 Units</option>
+                                        <option value="1">1 Unit</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cg7" class="form-control">
+                                        <option disabled selected value="0">--Course Grade --</option>
+                                        <option value="5">A</option>
+                                        <option value="4">B</option>
+                                        <option value="3">C</option>
+                                        <option value="2">D</option>
+                                        <option value="1">E</option>
+                                        <option value="0">F</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mr-2 ml-2 mb-2">
+                            <div class="col-md-4">
+                                <div class="inputwrapper city-input-wrapper">
+                                    <input class="form-control" type="text" value="Course 8" readonly />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select class="form-control">
+                                        <option id="cu8" disabled selected value="0">-- Course Unit --</option>
+                                        <option value="6">6 Units</option>
+                                        <option value="5">5 Units</option>
+                                        <option value="4">4 Units</option>
+                                        <option value="3">3 Units</option>
+                                        <option value="2">2 Units</option>
+                                        <option value="1">1 Unit</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cg8" class="form-control">
+                                        <option disabled selected value="0">--Course Grade --</option>
+                                        <option value="5">A</option>
+                                        <option value="4">B</option>
+                                        <option value="3">C</option>
+                                        <option value="2">D</option>
+                                        <option value="1">E</option>
+                                        <option value="0">F</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mr-2 ml-2 mb-2">
+                            <div class="col-md-4">
+                                <div class="inputwrapper city-input-wrapper">
+                                    <input class="form-control" type="text" value="Course 9" readonly />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cu9" class="form-control">
+                                        <option disabled selected value="0">-- Course Unit --</option>
+                                        <option value="6">6 Units</option>
+                                        <option value="5">5 Units</option>
+                                        <option value="4">4 Units</option>
+                                        <option value="3">3 Units</option>
+                                        <option value="2">2 Units</option>
+                                        <option value="1">1 Unit</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cg9" class="form-control">
+                                        <option disabled selected value="0">--Course Grade --</option>
+                                        <option value="5">A</option>
+                                        <option value="4">B</option>
+                                        <option value="3">C</option>
+                                        <option value="2">D</option>
+                                        <option value="1">E</option>
+                                        <option value="0">F</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="row mr-2 ml-2 mb-2">
+                            <div class="col-md-4">
+                                <div class="inputwrapper city-input-wrapper">
+                                    <input class="form-control" type="text" value="Course 10" readonly />
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cu10" class="form-control">
+                                        <option disabled selected value="0">-- Course Unit --</option>
+                                        <option value="6">6 Units</option>
+                                        <option value="5">5 Units</option>
+                                        <option value="4">4 Units</option>
+                                        <option value="3">3 Units</option>
+                                        <option value="2">2 Units</option>
+                                        <option value="1">1 Unit</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="inputwrapper state-input-wrapper">
+                                    <select id="cg10" class="form-control">
+                                        <option disabled selected value="0">--Course Grade --</option>
+                                        <option value="5">A</option>
+                                        <option value="4">B</option>
+                                        <option value="3">C</option>
+                                        <option value="2">D</option>
+                                        <option value="1">E</option>
+                                        <option value="0">F</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+
+            </form>
+
+
+            <button type="button" id="calculate">Calculate!</button>
+
+        </div>
+        <div id="totalTip">
+            <div class="loading">
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+                <div class="loading-bar"></div>
+              </div>
+        </div>
+
+    </div>
+    <script src="./bootstrap/js/jquery.min.js"></script>
+    <script src="./main.js"></script>
+    <script src="./bootstrap/js/bootstrap.min.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,105 @@
+body {
+    font-family: Roboto;
+    background: rgba(142, 0, 111, 0.733);
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, rgb(208, 52, 255), rgba(246, 148, 255, 0.555));
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, rgb(232, 62, 255), rgba(230, 102, 255, 0.425));
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  
+  .lead{
+      text-align: center;
+  }
+
+  #container {
+    height: fit-content;
+    width: 750px;
+    margin: 100px auto;
+    margin-top: 20px !important;
+    background: #f7f7f7;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.1);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+  }
+  
+  h1 {
+    background: #AD133A;
+    color: white;
+    margin: 0;
+    padding: 10px 100px;
+    text-transform: uppercase;
+    font-size: 22px;
+    font-weight: 600;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    text-align: center;
+  }
+  
+  button {
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin: 30px auto;
+    background: #AD133A;
+    border-radius: 5px;
+    width: 200px;
+    height: 50px;
+    font-size: 17px;
+    color: white;
+  }
+  
+  button:hover {
+    background: #4c2827;
+    border-bottom-color: #111;
+  }
+  
+  button:active {
+    position: relative;
+    top: 1px;
+  }
+  
+
+  /* loading bar */
+
+  .loading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  .loading-bar {
+    display: inline-block;
+    width: 8px;
+    height: 35px;
+    border-radius: 4px;
+    animation: loading 1s ease-in-out infinite;
+  }
+  .loading-bar:nth-child(1) {
+    background-color: #3498db;
+    animation-delay: 0;
+  }
+  .loading-bar:nth-child(2) {
+    background-color: #c0392b;
+    animation-delay: 0.09s;
+  }
+  .loading-bar:nth-child(3) {
+    background-color: #f1c40f;
+    animation-delay: .18s;
+  }
+  .loading-bar:nth-child(4) {
+    background-color: #27ae60;
+    animation-delay: .27s;
+  }
+  
+  @keyframes loading {
+    0% {
+      transform: scale(1);
+    }
+    20% {
+      transform: scale(1, 2.2);
+    }
+    40% {
+      transform: scale(1);
+    }
+  }
